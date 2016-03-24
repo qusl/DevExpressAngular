@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html ng-app="myApp">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="js/angular.min.js"></script>
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="js/angular-sanitize.min.js"></script>
+    <script src="js/globalize.min.js"></script>
+    <script src="js/dx.all.js"></script>
+
+
+    <link rel="stylesheet" type="text/css" href="css/dx.common.css" />
+    <link rel="stylesheet" type="text/css" href="css/dx.light.css" />
+
+    <script src="data.js"></script>
+
+
+    <script src="app.js"></script>
+    <!--<script src="Resellers/resellers.js"></script>
+    <script src="Resellers/resellers.service.js"></script>-->
+
+    <script src="Sys/sys.js"></script>
+    <script src="Sys/sys.service.js"></script>
+
+
+
+    <!--<script type="text/javascript">
+        var myApp = angular.module('myApp', ['dx']);
+        myApp.controller("mainCtrl", function ($scope) {
+
+            $scope.gridSettings = {
+                dataSource: employees,
+                paging: {
+                    pageSize: 6
+                },
+                filterRow: {
+                    visible: true
+                },
+                groupPanel: {
+                    visible: true,
+                },
+                editing: {
+                    editMode: 'row',
+                    editEnabled: true,
+                    removeEnabled: true,
+                    insertEnabled: true
+
+                }
+            }
+        });
+
+    </script>-->
+
+</head>
+
+<body ng-controller="mainCtrl">
+    <div dx-data-grid="gridSettings"></div>
+</body>
+
+<!--<body>
+    <div ng-controller="mainCtrl as vm">
+        <div ng-repeat="reseller in vm.resellers">
+            <span>{{::reseller.ResellerID}}</span>
+            <span>{{::reseller.ResellerName}}</span>
+        </div>
+    </div>
+</body>-->
+
+</html>
